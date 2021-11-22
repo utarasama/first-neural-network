@@ -8,8 +8,8 @@ namespace Réseau_de_neurones
         static void Main(string[] args)
         {
             Réseau r = new Réseau();
-            int[] inputData = { 0, 0, 0, 0 };
-            for (int i = 0; i < 13; i++)
+            int[] inputData;
+            for (int i = 0; i <= 13; i++)
             {
                 inputData = GetDataFromImages(i);
                 r.Propager(inputData);
